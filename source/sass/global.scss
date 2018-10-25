@@ -1,0 +1,33 @@
+body {
+  margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+
+html {
+  box-sizing: border-box;
+  font-family: $font-main;
+  min-width: $mobile;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.visuallyhidden {
+  @include visuallyhidden;
+}
