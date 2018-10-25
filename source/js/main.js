@@ -1,38 +1,9 @@
 import '@babel/polyfill';
 import Polyfill from './polifill';
-import {menuToggleFunctions, mainMenuButton, mainMenu, socialMenu, mainMenuOverlay} from './toggle-menu';
-import onDocumentLoad from './text-appearance';
-import Modal from './modal';
-import onSubmitClick from './submit';
 import Slip from './slipping';
-import {projectsObj as projects} from './project-callback';
-import {onWindowResize, slider} from './resize';
-import Scroll from './scroll';
 
 const polifill = new Polyfill();
-const scroll = new Scroll;
-const modal = new Modal();
 const slip = new Slip();
-const onWindowScroll = scroll.onScroll();
-const feedbackButton = document.querySelector(`.contacts__button`);
-const feedbackForm = document.querySelector(`.contacts__feedback-wrap`);
-const feedbackCloseButton = document.querySelector(`.contacts__feedback-button`);
-const feedbackSubmit = document.querySelector(`.feedback__submit`);
-const subscribeSubmit = document.querySelector(`.form__submit`);
 
 polifill.closest();
 slip.addEvents();
-slider.addEvents();
-document.addEventListener(`DOMContentLoaded`, onDocumentLoad);
-mainMenuButton.addEventListener(`click`, menuToggleFunctions.onButtonClick);
-mainMenuOverlay.addEventListener(`click`, menuToggleFunctions.onButtonClick);
-document.addEventListener(`keydown`, menuToggleFunctions.onDocumentkeydown);
-window.addEventListener(`resize`, menuToggleFunctions.onWindowResize);
-mainMenu.addEventListener(`click`, menuToggleFunctions.onMenuClick);
-socialMenu.addEventListener(`click`, menuToggleFunctions.onMenuClick);
-feedbackButton.addEventListener(`click`, modal.open(feedbackForm));
-feedbackCloseButton.addEventListener(`click`, modal.hide(feedbackForm));
-feedbackSubmit.addEventListener(`click`, onSubmitClick);
-subscribeSubmit.addEventListener(`click`, onSubmitClick);
-window.addEventListener(`resize`, onWindowResize);
-window.addEventListener(`scroll`, onWindowScroll);

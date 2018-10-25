@@ -11,9 +11,9 @@
   <!-- HEADER -->
   <header class="main-header">
     <div class="container main-header__container">
-      <a class="main-header__link" href="#">Как доехать</a>
+      <a class="main-header__link" href="#map">Как доехать</a>
       <img class="main-header__logo" src="img/main-header/logo.png" alt="Логотип МакСпецСервис">
-      <h1 class="main-header__title">МакСпецСервис</h1>
+      <h1 class="main-header__title fn org">МакСпецСервис</h1>
       <div class="main-header__info">
         <ul class="main-header__telephons">
           <li class="main-header__tel tel">+38 (099) 124 26 01</li>
@@ -23,10 +23,10 @@
           <p class="schedule__title">
             График работы
           </p>
-          <p class="schedule__info">
+          <p class="schedule__info workhours">
             Пн-пт: 8<sup class="schedule__sup">00</sup> - 17<sup class="schedule__sup">00</sup>
           </p>
-          <p class="schedule__info">
+          <p class="schedule__info workhours">
             Сб-вс: выходной
           </p>
         </div>
@@ -36,48 +36,151 @@
 
   <!-- MAIN -->
   <main class="main">
-    <div class="pages-menu">
+    <!-- PAGES-MENU -->
+    <section class="pages-menu">
+      <h2 class="pages-menu__title">Наши услуги</h2>
       <div class="container pages-menu__container">
         <ul class="pages-menu__list">
           <li class="pages-menu__item">
-            <a class="pages-menu__link" href="#">
+            <a class="pages-menu__link" href="http://mss.org.ru/arenda_avtokranov.html">
               <img class="pages-menu__img" width="292" height="219" src="img/pages-menu/truck-crane.jpg" alt="автокран">
               <span class="pages-menu__desc">Аренда автокранов</span>
             </a>
           </li>
           <li class="pages-menu__item">
-            <a class="pages-menu__link" href="#">
+            <a class="pages-menu__link" href="http://mss.org.ru/remont_legkovyh_auto.html">
               <img class="pages-menu__img" width="292" height="219" src="img/pages-menu/car.jpg" alt="легковой автомобиль">
               <span class="pages-menu__desc">Ремонт легковых авто</span>
             </a>
           </li>
           <li class="pages-menu__item">
-            <a class="pages-menu__link" href="#">
+            <a class="pages-menu__link" href="http://mss.org.ru/remont_gruzovoi_tehniki.html">
               <img class="pages-menu__img" width="292" height="219" src="img/pages-menu/truck.jpg" alt="грузовой автомобиль">
               <span class="pages-menu__desc">Ремонт грузовых авто</span>
             </a>
           </li>
           <li class="pages-menu__item">
-            <a class="pages-menu__link" href="#">
+            <a class="pages-menu__link" href="http://mss.org.ru/svarochnie_raboty.html">
               <span class="pages-menu__desc">Сварочные работы</span>
               <img class="pages-menu__img" width="292" height="219" src="img/pages-menu/welding.jpg" alt="сварка">
             </a>
           </li>
           <li class="pages-menu__item">
-            <a class="pages-menu__link" href="#">
+            <a class="pages-menu__link" href="http://mss.org.ru/tokarnie-raboti.html">
               <span class="pages-menu__desc">Токарные работы</span>
               <img class="pages-menu__img" width="292" height="219" src="img/pages-menu/drill.jpg" alt="сверло">
             </a>
           </li>
           <li class="pages-menu__item">
-            <a class="pages-menu__link" href="#">
+            <a class="pages-menu__link" href="http://mss.org.ru/o_kompanii.html">
               <span class="pages-menu__desc">О компании</span>
               <img class="pages-menu__img" width="292" height="219" src="img/pages-menu/logo2.png" alt="Логотип МакСпецСервис">
             </a>
           </li>
         </ul>
       </div>
-    </div>
+    </section >
+
+    <!-- SERVISES -->
+    <section class="services">
+      <div class="services__container container">
+        <h2 class="services__title">Наша компания предоставляет услуги по ремонту</h2>
+        <ul class="services__list">
+          <li class="services__item">
+            <a class="services__link" href="http://mss.org.ru/remont_gruzovoi_tehniki.html">
+             <span class="services__link-desc">спецтехники</span>
+            </a>
+          </li>
+          <li class="services__item">
+            <a class="services__link" href="http://mss.org.ru/remont_gruzovoi_tehniki.html">
+             <span class="services__link-desc">грузового транспорта</span>
+            </a>
+          </li>
+          <li class="services__item">
+            <a class="services__link" href="http://mss.org.ru/remont_legkovyh_auto.html">
+             <span class="services__link-desc">легкового транспорта</span>
+            </a>
+          </li>
+          <li class="services__item services__item--last">
+            <a class="services__link services__link--last" href="http://mss.org.ru/arenda_avtokranov.html">
+             <span class="services__link-desc services__link-desc--last">Также сдаем в аренду любые виды грузоподъемной техники</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- MAP -->
+    <section class="map" id="map">
+      <h2 class="map__title">Как к нам добраться:</h2>
+      <iframe class="map__iframe" src="https://snazzymaps.com/embed/108558" width="1920" height="450" style="border:none;"></iframe>
+    </section>
   </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer__container container">
+      <a class="footer__logo-link" href="#">
+        <img class="footer__logo" src="img/footer/logo.png" alt="Логотип МакСпецСервис">
+      </a>
+      <dl class="footer__contacts">
+        <dt class="footer__contacts-termin">моб:</dt>
+        <dd class="footer__contacts-desc">
+          <span class="tel">+38 (099) 124 26 01</span>
+          <span class="tel">+38 (071) 302 35 20</span>
+        </dd>
+        <dt class="footer__contacts-termin">e-mail:</dt>
+        <dd class="footer__contacts-desc">
+          <a class="footer__contacts-mail email" href="mailto:info@msservice.org">info@msservice.org</a>
+        </dd>
+        <dt class="footer__contacts-termin">Адресс:</dt>
+        <dd class="footer__contacts-desc">
+          <span class="locality">г. Макеевка,</span>
+          <span class="street-address">бул. 8-го Сентября, 5</span>
+        </dd>
+      </dl>
+
+      <div class="footer__menu footer-menu">
+        <div class="footer-menu__category">
+          <p class="footer-menu__title">аренда</p>
+          <ul class="footer-menu__list">
+            <li class="footer-menu__item">
+              <a class="footer-menu__link" href="http://mss.org.ru/arenda_avtokranov.html">Аренда автокранов</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-menu__category">
+          <p class="footer-menu__title">ремонт</p>
+          <ul class="footer-menu__list">
+            <li class="footer-menu__item">
+              <a class="footer-menu__link" href="http://mss.org.ru/svarochnie_raboty.html">Сварочные работы</a>
+            </li>
+            <li class="footer-menu__item">
+              <a class="footer-menu__link" href="http://mss.org.ru/tokarnie-raboti.html">Токарные работы</a>
+            </li>
+            <li class="footer-menu__item">
+              <a class="footer-menu__link" href="http://mss.org.ru/remont_gruzovoi_tehniki.html">Ремонт грузовой техники</a>
+            </li>
+            <li class="footer-menu__item">
+              <a class="footer-menu__link" href="http://mss.org.ru/remont_legkovyh_auto.html">Ремонт легковых</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-menu__category">
+          <p class="footer-menu__title">о нас</p>
+          <ul class="footer-menu__list">
+            <li class="footer-menu__item">
+              <a class="footer-menu__link" href="http://mss.org.ru/o_kompanii.html">О компании</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- SCRIPTS -->
+  <script src="js/main.js"></script>
 </body>
 </html>
