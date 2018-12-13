@@ -4,11 +4,33 @@
 @import "normalize";
 @import "fonts";
 //blocks
+@import "blocks/gallery";
+@import "blocks/price";
 @import "blocks/container";
+@import "blocks/list-works";
+/*header*/
 @import "blocks/main-header";
+@import "blocks/header";
 @import "blocks/schedule";
+@import "blocks/main-menu";
+/*main*/
+@import "blocks/about";
 @import "blocks/pages-menu";
 @import "blocks/services";
 @import "blocks/map";
+/*footer*/
 @import "blocks/footer";
 @import "blocks/footer-menu";
+/*truck*/
+@import "blocks/truck/truck";
+@import "blocks/truck/truck-item";
+/*welding*/
+@import "blocks/welding/welding-item";
+/*cars*/
+@import "blocks/cars/cars-item";
+/*turning*/
+@import "blocks/turning/turning-item";
+/*truck-crane*/
+@import "blocks/truck-crane/truck-crane-banner";
+@import "blocks/truck-crane/truck-crane-item";
+

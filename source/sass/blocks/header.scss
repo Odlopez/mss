@@ -1,0 +1,53 @@
+.header {
+  position: relative;
+
+  width: 100%;
+
+  background-color: $main-color;
+}
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px 0;
+  align-items: center;
+}
+
+.header__org {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.header__logo-link {
+  display: flex;
+  justify-content: center;
+}
+
+.header__logo {
+  width: 61px;
+  height: 61px;
+  margin-right: 10px;
+}
+
+.header__title {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 48px;
+  font-family: $font-third;
+  color: white;
+  letter-spacing: 3px;
+}
+
+.header__telephons {
+  @include list-reset;
+}
+
+.header__tel {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 34px;
+  font-family: $font-decor;
+  letter-spacing: 2px;
+}

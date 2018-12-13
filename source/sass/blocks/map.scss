@@ -1,22 +1,25 @@
 .map {
   width: 100%;
   position: relative;
-  height: 610px;
+  height: 0;
+  overflow: hidden;
+  transition: all 0.5s ease;
 }
 
 .map__title {
-  height: 160px;
-  background-color: $main-color;
-  text-align: center;
-  font-family: $font-main;
-  font-size: 32px;
-  color: $text-color;
-  line-height: 38px;
-  padding: 62px;
-  margin: 0;
+  // height: 100px;
+  // background-color: $main-color;
+  // text-align: center;
+  // font-family: $font-main;
+  // font-size: 32px;
+  // color: $text-color;
+  // line-height: 38px;
+  // padding: 32px;
+  // margin: 0;
+  @extend .about__title;
 }
 
 .map__iframe {
   width: 100%;
-  height: 450px;
+  height: 400px;
 }

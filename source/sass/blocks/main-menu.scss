@@ -1,0 +1,42 @@
+.main-menu__list {
+  @include list-reset;
+
+  display: flex;
+
+  background-color: rgba(0, 28, 48, 0.8);
+}
+
+.main-menu__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 43px;
+  margin-right: 2px;
+
+  background-image: linear-gradient(to bottom, rgba(46, 91, 128, 0.3), $main-color 100%);
+  border-bottom: 3px solid $main-color;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &:hover,
+  &:focus,
+  &:focus-within {
+    background-image: linear-gradient(to bottom, rgba(0, 28, 48, 0.15), rgba(46, 91, 128, 0.58) 100%);
+    border-color: white;
+  }
+}
+
+.main-menu__link {
+  padding: 5px 15px;
+
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 18px;
+  font-family: $font-main;
+  text-align: center;
+  color: $text-color;
+
+  outline: none;
+}

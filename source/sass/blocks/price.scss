@@ -1,0 +1,35 @@
+.price {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.price__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+  padding: 10px 25px;
+
+  font-size: 40px;
+  font-family: $font-main;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+
+  background-color: $main-color;
+  border-radius: 10px;
+  outline: none;
+
+  transition: all 0.3s ease;
+
+  &:focus,
+  &:hover {
+    box-shadow: 5px 5px 0 rgba($color: $main-color, $alpha: 0.5);
+  }
+
+
+  &:active {
+    box-shadow: 2px 2px 0 rgba($color: $main-color, $alpha: 0.7);
+  }
+}

@@ -1,16 +1,18 @@
 .services {
   font-family: $font-main;
-  padding: 100px 0;
+  padding: 50px 0;
 }
 
 .services__title {
-  font-weight: 500;
-  font-size: 32px;
-  line-height: 38px;
-  text-align: center;
-  color: #182539;
-  margin-bottom: 40px;
-  margin-top: 0;
+  // font-weight: 500;
+  // font-size: 32px;
+  // line-height: 38px;
+  // text-align: center;
+  // color: #182539;
+  // margin-bottom: 40px;
+  // margin-top: 0;
+
+  @extend .about__title;
 }
 
 .services__list {
@@ -18,31 +20,32 @@
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
+  margin: 50px 0;
 }
 
 .services__item {
   width: 200px;
   min-height: 160px;
-  background-position: top center;
-  background-repeat: no-repeat;
-  background-size: 100% auto;
   margin-bottom: 15px;
 
-  &:first-child {
-    background-image: url("../img/services/truck-crane.png");
+  &:first-child .services__link {
+    background-image: url("../images/services/truck-crane.png");
   }
 
-  &:nth-child(2) {
-    background-image: url("../img/services/truck.png");
+  &:nth-child(2) .services__link {
+    background-image: url("../images/services/truck.png");
   }
 
-  &:nth-child(3) {
-    background-image: url("../img/services/auto.png");
+  &:nth-child(3) .services__link {
+    background-image: url("../images/services/auto.png");
   }
 
   &--last {
     width: 80%;
-    background: url("../../img/services/watch.png") no-repeat left center;
+
+    & .services__link {
+      background: url("../images/services/watch.png") no-repeat left center;
+    }
   }
 }
 
@@ -53,11 +56,19 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
 
   &--last {
     justify-content: center;
     padding-left: 225px;
     align-items: flex-end;
+  }
+
+  &:focus,
+  &:hover {
+    opacity: 0.75;
   }
 }
 

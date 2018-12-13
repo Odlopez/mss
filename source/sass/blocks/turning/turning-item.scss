@@ -1,0 +1,26 @@
+.turning-item {
+  width: 100%;
+  margin: 50px 0;
+  padding: 5px 0;
+
+  background-color: $main-color;
+}
+
+.turning-item__title {
+  width: $container-width;
+  margin: 10px auto;
+
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 30px;
+  font-family: $font-main;
+  text-align: center;
+  color: $text-color;
+}
+
+.turning-item__video {
+  width: 500px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}

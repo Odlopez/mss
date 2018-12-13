@@ -1,0 +1,108 @@
+.truck-crane-item {
+  width: 800px;
+  margin: 0 auto;
+}
+
+.truck-crane-item__title {
+  margin-top: 80px;
+
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+  font-family: $font-main;
+  text-align: center;
+  color: $main-color;
+}
+
+.truck-crane-item__inner {
+  position: relative;
+  z-index: 5;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.truck-crane-item__image-link {
+  width: 450px;
+  height: 340px;
+}
+
+.truck-crane-item__image {
+  width: 100%;
+}
+
+.truck-crane-item__list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  font-size: 19px;
+  line-height: 23px;
+  font-family: $font-main;
+  text-align: right;
+  padding-bottom: 50px;
+}
+
+.truck-crane-item__termin {
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.truck-crane-item__description {
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.truck-crane-item__bottom-group {
+  position: relative;
+  top: -50px;
+
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+
+  background-color: $main-color;
+}
+
+.truck-crane-item__table {
+  align-self: flex-end;
+  min-height: 49px;
+
+  font-size: 19px;
+  line-height: 23px;
+  font-family: $font-main;
+  text-align: right;
+  color: $text-color;
+}
+
+.truck-crane-item__index {
+  text-align-last: left;
+}
+
+.truck-crane-item__price {
+  padding-left: 15px;
+}
+
+.truck-crane-item__scheme {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 43px;
+  font-family: $font-main;
+  text-align: center;
+  color: $text-color;
+
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
+
+  &--unvisible {
+    font-size: 0;
+    line-height: 0;
+  }
+}

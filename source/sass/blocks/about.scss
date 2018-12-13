@@ -1,0 +1,40 @@
+.about {
+  // padding: 25px 0;
+
+  font-family: $font-main;
+
+  // border-top: 33px solid $main-color;
+  // border-bottom: 33px solid $main-color;
+}
+
+.about__title {
+  // margin-top: 0;
+  // margin-bottom: 20px;
+
+  // font-weight: 500;
+  // font-size: 32px;
+  // line-height: 38px;
+  // text-align: center;
+  // color: #182539;
+
+  height: 100px;
+  background-color: $main-color;
+  text-align: center;
+  font-family: $font-main;
+  font-size: 32px;
+  color: $text-color;
+  line-height: 38px;
+  padding: 32px;
+  margin: 0;
+}
+
+.about__text {
+  font-size: 20px;
+  line-height: 28px;
+  color: #182539;
+  font-family: $font-decor;
+
+  &::first-letter {
+    padding-left: 50px;
+  }
+}
