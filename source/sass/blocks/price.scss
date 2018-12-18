@@ -2,6 +2,10 @@
   display: flex;
   justify-content: center;
   width: 100%;
+
+  &--main {
+    margin-top: 50px;
+  }
 }
 
 .price__link {
