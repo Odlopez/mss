@@ -10,6 +10,5 @@ build/
 npm-debug.*
 source/css/*.css
 Thumbs.db
-source/video/*.*
 Links/
 source/sass/_style.scss
