@@ -10,9 +10,6 @@ build/
 npm-debug.*
 source/css/*.css
 Thumbs.db
-source/img/desktop.png
-source/img/tablet.png
-source/img/mobile.png
-source/img/mobile-open.png
+source/video/*.*
 Links/
 source/sass/_style.scss
